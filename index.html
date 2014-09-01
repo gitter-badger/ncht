@@ -1,0 +1,54 @@
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Dosis:200);
+  body {
+    background-color: #2c3e50;
+    font-family: Dosis, sans-serif;
+    font-weight: 200;
+  }
+
+  .k {
+    background-color: #2c3e50;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-animation: ka 1s linear infinite;
+    -moz-animation: ka 1s linear infinite;
+    animation: ka 1s linear infinite;
+    border-radius: 100px;
+    background-color: #ecf0f1;
+  }
+
+  span {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  -webkit-@keyframes ka {
+    50% {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+    }
+  }
+
+  -moz-@keyframes ka {
+    50% {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+    }
+  }
+
+  @keyframes ka {
+    50% {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+    }
+  }
+</style>
+
+<div class="k"></div>
+<span>we're making ncht better for you</span>
