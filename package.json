@@ -2,6 +2,11 @@
   "name": "ncht",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.8.7"
+    "express": "^4.8.7",
+    "jade": "^1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-sass": "^0.7.3"
   }
 }
