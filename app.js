@@ -1,15 +1,14 @@
-var express = require('express');
-var app = express();
+var fs = require('fs');
+var conf = require('nconf');
 
-var config = require('./app/config.json');
+//Load the Config file into nconf
+conf.file({ file: './app/config.json' });
 
-app.use(express.static(__dirname + '/public'));
-
-app.set('views', __dirname + '/app/views')
-app.set('view engine', 'jade');
-
-app.get('/', function (req, res) {
-  res.render('load', { title: config.general.appName });
-});
-
-app.listen(process.env.PORT || 1337);
+if (conf.get('system:firstRun') === true) {
+  require('./app/install/index').install(conf, function () {
+    conf.set('system:firstRun', false);
+    conf.save(function (err) {
+      if (err) throw err;   
+    });
+  });
+}

@@ -1,5 +1,9 @@
 {
+  "system": {
+    "firstRun": false,
+    "version": "0.0.2"
+  },
   "general": {
-    "appName": "ncht"
+    "appName": "ncht - demo"
   }
 }

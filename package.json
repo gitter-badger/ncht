@@ -2,8 +2,11 @@
   "name": "ncht",
   "version": "0.0.1",
   "dependencies": {
+    "bluebird": "^2.3.2",
     "express": "^4.8.7",
-    "jade": "^1.6.0"
+    "jade": "^1.6.0",
+    "nconf": "^0.6.9",
+    "prompt": "^0.2.13"
   },
   "devDependencies": {
     "gulp": "^3.8.8",
