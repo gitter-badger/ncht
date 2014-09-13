@@ -1,6 +1,6 @@
 {
   "name": "ncht",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "hipster node chat",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "bluebird": "^2.3.2",
+    "chalk": "^0.5.1",
     "express": "^4.8.7",
     "jade": "^1.6.0",
     "nconf": "^0.6.9",

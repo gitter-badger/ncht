@@ -4,6 +4,7 @@
 // Main installer file.
 // ---
 
+var ch = require('chalk');
 var readline = require('readline');
 var rl = readline.createInterface({
   input: process.stdin,
@@ -13,10 +14,10 @@ var rl = readline.createInterface({
 
 module.exports = {
   install: function (conf, callback) {
-    console.log("ncht installer v1 \n~by @kxy & @pixeldesu~");
-    rl.question('What do you want to name your app? ', function (answer) {
+    console.log(ch.underline("ncht installer v2 \n~by @kxy & @pixeldesu~"));
+    rl.question(ch.blue('What do you want to name your app? '), function (answer) {
       conf.set('general:appName', answer);
-      console.log("Set App Name as " + answer);
+      console.log(ch.green("Set App Name as ") + ch.green(answer));
       callback();
     });
   }
