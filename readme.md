@@ -19,9 +19,9 @@ Probably not. We haven't even started on the actual 'chat' part yet.
 
 That would be us. We are two hobby programmers and web developers sitting in front of our computers everyday to bring you this piece of whateveritisrightnow:
 
--[kxy](http://kyr.li), backend guy
+- [kxy](http://kyr.li), backend guy
 
--[pixeldesu](http://pixeldesu.de), frontend guy
+- [pixeldesu](http://pixeldesu.de), frontend guy
 
 ##License
 
