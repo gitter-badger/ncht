@@ -13,7 +13,7 @@ var rl = readline.createInterface({
 
 module.exports = {
   install: function (conf, callback) {
-    console.log("ncht v0.0.2 installer \n~by @kxy & @pixeldesu~");
+    console.log("ncht installer v1 \n~by @kxy & @pixeldesu~");
     rl.question('What do you want to name your app? ', function (answer) {
       conf.set('general:appName', answer);
       console.log("Set App Name as " + answer);
