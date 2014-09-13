@@ -2,6 +2,10 @@
   "name": "ncht",
   "version": "0.0.3",
   "description": "hipster node chat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ncht/ncht.git"
+  },
   "dependencies": {
     "bluebird": "^2.3.2",
     "express": "^4.8.7",
