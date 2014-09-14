@@ -1,4 +1,6 @@
-#ncht [![Dependency Status](https://david-dm.org/ncht/ncht.svg)](https://david-dm.org/ncht/ncht)
+[![Dependency Status](https://david-dm.org/ncht/ncht.svg)](https://david-dm.org/ncht/ncht) [![Code Climate](https://codeclimate.com/github/ncht/ncht/badges/gpa.svg)](https://codeclimate.com/github/ncht/ncht)
+
+#ncht
 
 ##What is it?
 
