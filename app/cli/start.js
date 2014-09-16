@@ -9,12 +9,14 @@ var program = require('commander');
 var ncht = require('../server');
 var conf = require('../config.json');
 
+var CONF_PATH = process.cwd() + '/app/config.json';
+
 program
   .option('-p --port <port>', 'port')
   .command("start")
   .description("Starts the server")
   .action(function () {
-    fs.exists('../config.json', function (exists) {
+    fs.exists(CONF_PATH, function (exists) {
       if (!exists) {
         process.stdout.write("ERROR: Config file not found!");
         process.exit(0);
