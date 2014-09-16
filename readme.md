@@ -9,6 +9,7 @@ ncht is a fast, lightweight and cool chat system which is based on Node.js. It i
 ##Can I use it?
 
 Probably not. We haven't even started on the actual 'chat' part yet.
+(there's the `npm i -g ncht` module though)
 
 ##How do I contribute?
 
