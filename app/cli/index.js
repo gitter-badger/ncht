@@ -10,6 +10,7 @@ var pack = require('../../package.json');
 program.version(pack.version, "-v, --version");
 
 require('./install');
+require('./config');
 
 program.parse(process.argv);
 
