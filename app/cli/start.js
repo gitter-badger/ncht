@@ -7,9 +7,10 @@
 var fs = require('fs');
 var program = require('commander');
 var ncht = require('../server');
-var conf = require('../config.json');
 
 var CONF_PATH = process.cwd() + '/app/config.json';
+
+var conf = require(CONF_PATH);
 
 program
   .option('-p --port <port>', 'port')
