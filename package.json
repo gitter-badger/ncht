@@ -1,14 +1,39 @@
 {
   "name": "ncht",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "hipster node chat",
+  "author": "Jona H., Andreas N.",
+  "preferGlobal": true,
+  "bin": {
+    "ncht": "index.js"
+  },
+  "main": "http://localhost:8080",
+  "node-main": "./index.js",
+  "window": {
+    "title": "ncht",
+    "toolbar": false,
+    "height": 640,
+    "width": 1024
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ncht/ncht.git"
   },
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "browser",
+    "web",
+    "chat",
+    "selfhosted",
+    "server"
+  ],
+  "license": "GPL v3",
   "dependencies": {
     "bluebird": "^2.3.2",
     "chalk": "^0.5.1",
+    "commander": "^2.3.0",
     "express": "^4.8.7",
     "jade": "^1.6.0",
     "nconf": "^0.6.9",
