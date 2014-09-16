@@ -1,6 +1,6 @@
 {
   "name": "ncht",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "hipster node chat",
   "author": "Jona H., Andreas N.",
   "preferGlobal": true,
