@@ -22,7 +22,7 @@ program
           { stdio: "inherit" }
         );
       } else {
-        process.stdout.write("ERROR: Config file not found! Did you install ncht yet?");
+        process.stdout.write("ERROR: Config file not found!");
         process.exit(0);
       }
     })
