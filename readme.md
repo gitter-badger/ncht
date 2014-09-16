@@ -1,4 +1,4 @@
-[![NPM version](https://badge.fury.io/js/ncht.svg?style=flat)](http://badge.fury.io/js/ncht) [![Dependency Status](https://david-dm.org/ncht/ncht.svg?style=flat)](https://david-dm.org/ncht/ncht) [![Code Climate](https://codeclimate.com/github/ncht/ncht/badges/gpa.svg?style=flat)](https://codeclimate.com/github/ncht/ncht)
+[![NPM version](https://badge.fury.io/js/ncht.png)](http://badge.fury.io/js/ncht) [![Dependency Status](https://david-dm.org/ncht/ncht.png)](https://david-dm.org/ncht/ncht) [![Code Climate](https://codeclimate.com/github/ncht/ncht/badges/gpa.png)](https://codeclimate.com/github/ncht/ncht)
 
 #ncht
 
