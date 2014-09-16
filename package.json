@@ -29,7 +29,7 @@
     "selfhosted",
     "server"
   ],
-  "license": "GPL v3",
+  "license": "GPL",
   "dependencies": {
     "chalk": "^0.5.1",
     "commander": "^2.3.0",
