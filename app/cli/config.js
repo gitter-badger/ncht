@@ -5,7 +5,7 @@
 // ---
 
 var program = require('commander');
-var child = require('child_process');
+var editor = require('editor');
 var fs = require('fs');
 
 var CONF_PATH = process.cwd() + '/app/config.json';
@@ -16,11 +16,10 @@ program
   .action(function () {
     fs.exists(CONF_PATH, function (exists) {
       if (exists) {
-        child.spawn(
-          "sudo",
-          ["nano", CONF_PATH],
-          { stdio: "inherit" }
-        );
+        editor(CONF_PATH, function (code, sig) {
+          console.log('finished editing config.json, closing...');
+          process.exit(0);
+        })
       } else {
         process.stdout.write("ERROR: Config file not found!");
         process.exit(0);
