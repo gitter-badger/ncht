@@ -14,9 +14,7 @@ module.exports = function (port, conf) {
   app.set('view engine', 'jade');
   app.set('views', __dirname + '/views');
 
-  app.get('/', function (req, res) {
-    res.render('load', { title: conf.appName });
-  });
+  require('./lib/routes')(app, conf);
 
   http.listen(port, function () {
     process.stdout.write(conf.appName + " is now listening at port " + port + " :3");
