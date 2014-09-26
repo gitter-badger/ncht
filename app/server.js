@@ -7,10 +7,12 @@
 var xpr = require('express');
 var app = xpr();
 var http = require('http').Server(app);
+var bp = require('body-parser');
 
 module.exports = function (port, conf) {
   //express config stuff
   app.use(xpr.static(__dirname + '/public'));
+  app.use(bp.urlencoded({ extended: false }));
   app.set('view engine', 'jade');
   app.set('views', __dirname + '/views');
 
