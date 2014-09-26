@@ -1,6 +1,6 @@
 {
   "name": "ncht",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "hipster node chat",
   "author": "Jona H., Andreas N.",
   "preferGlobal": true,
@@ -31,10 +31,12 @@
   ],
   "license": "GPL",
   "dependencies": {
+    "body-parser": "^1.9.0",
     "commander": "^2.3.0",
     "editor": "^0.1.0",
     "express": "^4.9.0",
-    "jade": "^1.6.0"
+    "jade": "^1.6.0",
+    "shortid": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",
