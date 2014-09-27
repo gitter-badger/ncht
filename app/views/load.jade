@@ -5,9 +5,10 @@ html(lang="en")
     meta(charset="utf-8")
     link(rel="stylesheet", href="css/load.css")
   body
-    .wrapper
-      h1= title
-      form(method="post", action="/", enctype="application/json")
-        input(type="text", placeholder="Username...", name="username")
-        br
-        button(type="submit") Enter
+    #container
+      #login-box
+        h1.thin= title
+        form(method="post", action="/", enctype="application/json")
+          input(type="text", name"username", placeholder="Username..." autofocus)
+          br
+          button Enter

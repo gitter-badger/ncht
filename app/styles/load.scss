@@ -1,57 +1,111 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis:200);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
 
-:root {
-  background-color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  
+  font-family: Raleway, sans-serif;
+  color: white;
+  border: 0;
+  text-decoration: none;
+  
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiasing;
 }
 
-.wrapper {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  height: 600px;
-  width: 500px;
+html, body {
+  width: 100%;
+  height: 100%;
+}
 
-  h1 {
-    font-family: Dosis, sans-serif;
-    font-weight: 200;
-    font-size: 5rem;
-    color: #ecf0f1;
-    text-align: center;
-  }
+#container {
+  display: table;
+  
+  width: 100%;
+  height: 100%;
+  
+  background: #2c3e50;
+  text-align: center;
 
-  input {
-    font-family: Dosis, sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-    display: block;
+
+  #login-box {
+    display: table-cell;
+
+    width: 32%;
+    height: 80%;
+
     margin: 0 auto;
-    color: #ecf0f1;
-    background-color: transparent;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid #bdc3c7;
-  }
 
-  button {
-    font-family: Dosis, sans-serif;
-    font-weight: 200;
-    font-size: 1rem;
-    display: block;
-    margin: 0 auto;
-    outline: none;
-    width: 50%;
-    height: 30px;
-    color: #c0c0c0;
-    background-color: #3498db;
-    border: 1px solid #2980b9;
-    border-bottom: 5px solid #2980b9;
-    border-radius: 5px 5px 2px 2px;
-    transition: all .1s linear;
-  }
+    vertical-align: middle;
+  
 
-  button:active {
-    outline: none;
-    border-bottom: 2px solid #2980b9;
-    padding-top: 3px;
+    .thin {
+      font-weight: 200;
+    }
+
+    h1 {
+      width: 32%;
+
+      margin: 0 auto;
+      margin-bottom: 32px;
+
+      font-size: 128px;
+
+      transition: text-shadow 0.16s ease-in-out;
+
+      &:hover {
+        text-shadow: 0 10px rgba(0, 0, 0, 0.32);
+      }
+    }
+
+    input {
+      z-index: 1;
+
+      width: inherit;
+
+      margin-bottom: 48px;
+      padding: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
+
+      background: transparent;
+      font-size: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 3px;
+
+      outline: none;
+
+      transition: background 0.12s ease-in-out, border 0.12s ease-in-out;
+    
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      &:focus {
+        background: rgba(255, 255, 255, 0.32);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    button {
+      padding: 12px;
+      padding-left: 32px;
+      padding-right: 32px;
+
+      background: transparent;
+      font-size: 24px;
+      cursor: pointer;
+
+      border: 1px solid white;
+
+      transition: background 0.12s ease-in-out, color 0.12s ease-in-out;
+    
+
+      &:hover, &:active {
+        background: white;
+        color: #2c3e50;
+      }
+    }
   }
 }
