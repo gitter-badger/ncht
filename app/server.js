@@ -20,5 +20,5 @@ module.exports = function (port, conf) {
 
   http.listen(port, function () {
     process.stdout.write(conf.appName + " is now listening at port " + port + " :3");
-  })
-}
+  });
+};

@@ -26,5 +26,5 @@ program
         var port = program.port || process.env.PORT || conf.port;
         ncht(port, conf);
       }
-    })
-  })
+    });
+  });

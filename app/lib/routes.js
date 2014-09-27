@@ -11,4 +11,4 @@ module.exports = function (app, conf) {
     u.appendUser(req.body.username, id.generate());
     console.log(u.getUser(req.body.username));
   });
-}
+};

@@ -16,13 +16,13 @@ program
   .action(function () {
     fs.exists(CONF_PATH, function (exists) {
       if (exists) {
-        editor(CONF_PATH, function (code, sig) {
+        editor(CONF_PATH, function () {
           console.log('finished editing config.json, closing...');
           process.exit(0);
-        })
+        });
       } else {
         process.stdout.write("ERROR: Config file not found!");
         process.exit(0);
       }
-    })
+    });
   });
