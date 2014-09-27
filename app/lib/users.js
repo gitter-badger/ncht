@@ -8,7 +8,7 @@ module.exports = {
   getUser: function (username) {
     users.forEach(function (element) {
      if (element.username === username) {
-       return element
+       return element;
       } 
     });
   }
