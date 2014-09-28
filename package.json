@@ -7,8 +7,7 @@
   "bin": {
     "ncht": "index.js"
   },
-  "main": "http://localhost:8080",
-  "node-main": "./index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ncht/ncht.git"
